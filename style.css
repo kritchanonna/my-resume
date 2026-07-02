@@ -12,7 +12,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #D32F2F; /* ธีมสีแดงตามสีที่ชอบ */
+    background-color: #D32F2F;
+    /* ธีมสีแดงตามสีที่ชอบ */
     color: white;
     padding: 20px 5%;
 }
@@ -81,7 +82,7 @@ header nav a:hover {
     background: white;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     border-top: 4px solid #D32F2F;
 }
@@ -117,4 +118,30 @@ footer {
     margin-top: 20px;
     font-size: 0.9em;
     color: #aaa;
+}
+
+
+
+/* ปรับแต่งสำหรับหน้าจอมือถือ (Responsive) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        /* สั่งให้โลโก้กับเมนูเรียงซ้อนกันบนล่างแทนการอยู่ซ้ายขวา */
+        gap: 15px;
+        /* เพิ่มช่องว่างระหว่างโลโก้กับเมนู */
+        padding: 20px 10px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        /* ถ้าเมนูยาวไปให้ปัดตกบรรทัดได้แบบเป็นระเบียบ */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    header nav a {
+        margin: 0;
+        /* เคลียร์ระยะห่างแบบเก่าออก ให้โค้ดใช้ระยะห่างจาก gap แทน */
+    }
 }
