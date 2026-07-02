@@ -1,0 +1,120 @@
+/* การตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header & Navigation (ใช้ Flexbox) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D32F2F; /* ธีมสีแดงตามสีที่ชอบ */
+    color: white;
+    padding: 20px 5%;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* About Me / Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #D32F2F;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    color: #D32F2F;
+}
+
+.hero-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Resume Section (3 Columns using CSS Grid) */
+.resume-section {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.resume-section h2 {
+    color: #D32F2F;
+    margin-bottom: 30px;
+}
+
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    border-top: 4px solid #D32F2F;
+}
+
+.card h3 {
+    color: #333;
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.card ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+/* Footer (ใช้ Flexbox) */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-col h3 {
+    color: #D32F2F;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #aaa;
+}
