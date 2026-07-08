@@ -1,4 +1,4 @@
-/* การตั้งค่าพื้นฐาน */
+/* basic set */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Header & Navigation (ใช้ Flexbox) */
+/* Header & Navigation (Flexbox) */
 header {
     display: flex;
     justify-content: space-between;
@@ -122,26 +122,26 @@ footer {
 
 
 
-/* ปรับแต่งสำหรับหน้าจอมือถือ (Responsive) */
+/* mobile fix  */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
-        /* สั่งให้โลโก้กับเมนูเรียงซ้อนกันบนล่างแทนการอยู่ซ้ายขวา */
+
         gap: 15px;
-        /* เพิ่มช่องว่างระหว่างโลโก้กับเมนู */
+
         padding: 20px 10px;
     }
 
     header nav {
         display: flex;
         flex-wrap: wrap;
-        /* ถ้าเมนูยาวไปให้ปัดตกบรรทัดได้แบบเป็นระเบียบ */
+
         justify-content: center;
         gap: 15px;
     }
 
     header nav a {
         margin: 0;
-        /* เคลียร์ระยะห่างแบบเก่าออก ให้โค้ดใช้ระยะห่างจาก gap แทน */
+
     }
 }
